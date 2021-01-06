@@ -6,19 +6,9 @@
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-asm",
   "repository": {
     "type": "git",
     "url": "https://github.com/mmssddss/language-asm.git"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mmssddss/language-asm/issues"
-  },
-  "devDependencies": {
-    "coffeelint": "^1.10.1"
-  },
-  "dependencies": {
-    "tree-sitter-json": "^0.15.1"
-  }
 }
