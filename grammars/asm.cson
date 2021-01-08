@@ -7,7 +7,7 @@
 'patterns': [
   {
     'comment': 'command'
-    'match': '\\b(add|save|load|jump|jump_if_great|set|compare)\\b'
+    'match': '\\b(add|save|load|jump|jump_if_great|set|compare|halt)\\b'
     'name': 'support.function.builtin.asm'
   }
   {
