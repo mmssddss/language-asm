@@ -6,21 +6,25 @@
 ]
 'patterns': [
   {
-    'comment': 'command'
-    'match': '\\b(add|save|load|jump|jump_if_great|set|compare|halt)\\b'
-    'name': 'support.function.builtin.asm'
+      'comment': 'command'
+      'match': '\\b(add|save|load|jump|jump_if_great|set|compare|halt|save_from_register|set2|load2|add2|save2|subtract2|load_from_register|load_from_register2|save_from_register2|jump_from_register|jump_if_less)\\b'
+      'name': 'support.function.builtin.asm'
+  }
+  {
+      'comment': "pseudo-instruction"
+      'match': '\.[a-z]+\\b'
+      'name': 'support.function.builtin.asm'
   }
   {
       'comment': 'label'
-      'match': '\@[a-zA-Z0-9\_\-]+'
+      'match': '\@[a-zA-Z0-9\_\-]+\\b'
       'name': 'variable.other.normal.asm'
   }
-  {
-      'comment': 'address'
-      'match': '@[0-9]*'
-      'name': 'variable.other.normal.asm'
-  }
-
+  # {
+  #     'comment': 'address'
+  #     'match': '@[0-9]*'
+  #     'name': 'variable.other.normal.asm'
+  # }
   {
       'comment': 'comment'
       'match': ';.*'
@@ -28,12 +32,12 @@
   }
   {
        'comment':'register'
-       'match':'\\b(a1|a2|a3|pa|c1)\\b'
+       'match':'\\b(a1|a2|a3|pa|c1|f1)\\b'
        'name':'storage.modifier.normal.asm'
   }
   {
        'comment':'number'
-       'match':'[0-9]+'
+       'match':'\\b[0-9]+\\b'
        'name':'constant.numeric.asm'
   }
 ]
