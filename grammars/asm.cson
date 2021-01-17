@@ -3,6 +3,7 @@
 'fileTypes': [
   'asm'
   'assembly'
+  'a16'
 ]
 'patterns': [
   {
