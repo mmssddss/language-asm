@@ -1,6 +1,6 @@
 {
   "name": "language-asm",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "asm language support in Atom",
   "engines": {
     "atom": "*",
