@@ -6,6 +6,11 @@
   'a16'
 ]
 'patterns': [
+    {
+        'comment': 'label'
+        'match': '\@[a-zA-Z0-9\_\-]+\\b'
+        'name': 'variable.other.normal.asm'
+    }
   {
       'comment': 'command'
       'match': '\\b(add|save|load|jump|jump_if_great|set|compare|halt|save_from_register|set2|load2|add2|save2|subtract2|load_from_register|load_from_register2|save_from_register2|jump_from_register|jump_if_less)\\b'
@@ -16,11 +21,7 @@
       'match': '\.[a-z]+\\b'
       'name': 'support.function.builtin.asm'
   }
-  {
-      'comment': 'label'
-      'match': '\@[a-zA-Z0-9\_\-]+\\b'
-      'name': 'variable.other.normal.asm'
-  }
+
   # {
   #     'comment': 'address'
   #     'match': '@[0-9]*'
